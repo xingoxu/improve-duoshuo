@@ -1,7 +1,7 @@
 /**
  * @author xingo
  * @date 2016-12-25
- * @version 0.33 beta
+ * @version 0.34
  * @description 多说显示UA Admin
  * @update 替换多说开发版，尝试替换https
  */
