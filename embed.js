@@ -2631,7 +2631,7 @@ var userTail = (function () {
               } catch (u) {
                 e || p(-1, u)
               }
-              a && p(s, o, a, n)
+              a && p(s, o, a.replace(/http:/g , 'https:'), n)
             }, void(4 === g.readyState ? b() : g.onreadystatechange = b)
           }
         }
@@ -3330,7 +3330,7 @@ var userTail = (function () {
         this.styles = "display: none;", t.position && (this.styles += "top:" + t.position.top + ";", this.styles += "left:" + t.position.left, this.styles += "; overflow: hidden;"), this.on("update", function () {
           this.smiliesMap = DUOSHUO.smilies, this.styles = DUOSHUO.status.showSmilies ? this.styles.replace("none;", "block;") : this.styles.replace("block;", "none;"), this.smiliesMap && !this.targetType && (this.targetType = "微博-默认")
         }), this.parseSmilie = function (t, e) {
-          var s = "http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/";
+          var s = "https://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/";
           return 0 === this.targetType.indexOf("微博") ? s + e.replace("_org", "_thumb") : DUOSHUO.STATIC_URL + "/images/smilies/" + e
         }.bind(this), this.parseTitle = function (t) {
           return "WordPress" === this.targetType && (t = " " + t + " "), t
