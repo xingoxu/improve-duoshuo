@@ -2631,7 +2631,7 @@ var userTail = (function () {
               } catch (u) {
                 e || p(-1, u)
               }
-              a && p(s, o, a.replace(/http:/g , 'https:'), n)
+              a && p(s, o, a.replace(/ds.cdncache.org/g,'avatar.duoshuo.com').replace(/http:/g , 'https:'), n)
             }, void(4 === g.readyState ? b() : g.onreadystatechange = b)
           }
         }
